@@ -1,0 +1,142 @@
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+h1{
+  text-align: center;
+  position: relative;
+  bottom: 210px;
+  color: white; font-family: 'Helvetica Neue', sans-serif; 
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-github {
+  background: white;
+  color: black;
+}
+
+
+
+#sidebar-wrapper{
+    z-index:100;
+    position: absolute;
+    width:0;
+    height:100%;
+    overflow-y:hidden;
+    background: #181717;
+    opacity:0.8;
+      transition:all .5s;
+      display:flex;
+      align-items:center;
+    position: fixed;
+    
+  }
+  
+  /* Main Content */
+  #page-content-wrapper{
+    width: 100%;
+    height:100%;	
+    position: absolute;
+    padding:15px;
+      transition:all .5s;
+      padding-top: 130px;
+  }
+  
+  #menu-toggle{
+      transition:all .3s;
+      font-size:1.8em;
+      width: 2.19em;
+      border: 2px solid rgb(255, 255, 255) !important;
+      border-radius: 18px;
+      position: flex;
+      background: url(../images/hamb4.png);
+      position: fixed;
+    z-index: 1001;
+   
+  }
+
+
+  /* Change the width of the sidebar to display it*/
+  #wrapper.menuDisplayed #sidebar-wrapper{
+    width:250px;
+    
+  }
+  
+  #wrapper.menuDisplayed #page-content-wrapper{
+    padding-left:250px;
+  }
+  
+  /* Sidebar styling */
+  .sidebar-nav{
+    padding:0;
+    list-style:none; 
+      transition:all .5s;
+      width:100%;
+      text-align:center;
+  }
+  
+  .sidebar-nav li{
+    line-height:40px;  
+      width:100%;
+      transition:all .3s;
+      padding:10px;
+  }
+  
+  .sidebar-nav li a {
+    display:block;
+    text-decoration:none;
+    color:#ddd;
+  }
+  
+  .sidebar-nav li:hover{
+    background: orange !important;
+  }
+  
+.glyphicon-menu-hamburger{
+    color:black;
+}
+
+.bottom-content{
+    position: relative;
+    top: 40rem;
+    right: 10rem;
+}
+.bx-log-out{
+    color: white;
+    height:100px;
+}
+
+.blogout span{
+    height: 40px;
+    width: 70px;
+    text-align: center;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+
+}
